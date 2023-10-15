@@ -4,12 +4,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
 :root {
-    --primary-color: #302ae6;
+    --primary-color: rgba(33, 49, 63, .95);
     --secondary-color: #536390;
     --font-color: #424242;
     --bg-color: #fff;
     --heading-color: #292922;
-    --logo-url: url('../assets/KM_logo-removebg.png');
+    --logo-url: url('img/KM_logo-removebg.png');
+    --toggle-theme: url('img/moon.png')
 }
 
 .dark {
@@ -18,5 +19,6 @@
     --font-color: #e1e1ff;
     --bg-color: #161625;
     --heading-color: #818cab;
-    --logo-url: url('../assets/KM_logo-removebg-light.png');
+    --logo-url: url('img/KM_logo-removebg-light.png');
+    --toggle-theme: url('img/sun.png')
 }

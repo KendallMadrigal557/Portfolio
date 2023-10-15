@@ -8,6 +8,24 @@ const Navbar = () => {
     const handleToggle = () => {
         toggleDarkMode();
     };
+    function openNavbar() {
+        document.getElementById("mobile-menu").style.width = "100%";
+    }
+
+    function closeNavbar() {
+        document.getElementById("mobile-menu").style.width = "0%";
+    }
+
+    const handleMenuOpen = (e) =>{
+        e.preventDefault();
+        openNavbar();
+    }
+
+    const handleMenuClose = (e) =>{
+        e.preventDefault();
+        closeNavbar();
+    }
+
 
     return (
         <nav className='navbar'>
@@ -18,7 +36,20 @@ const Navbar = () => {
                 <li className='navbarItem'>Projects</li>
                 <li className='navbarItem'>Contact</li>
             </ul>
-            <button onClick={handleToggle}>Toggle Theme</button>
+            <div className='toggle-theme' onClick={handleToggle}></div>
+
+            <a href="" onClick={handleMenuOpen} id='menu'>Menu</a>
+
+            <div id='mobile-menu' className='overlay'>
+                <a onClick={handleMenuClose} href="" className='close'>&times;</a>
+                <div className='overlay-content'>
+                    <a>Home</a>
+                    <a>About</a>
+                    <a>Projects</a>
+                    <a>Contact</a>
+                </div>
+
+            </div>
         </nav>
     );
 };
