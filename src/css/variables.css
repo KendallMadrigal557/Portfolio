@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&family=Catamaran:wght@400;500;600;700&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --primary-color: #302ae6;
+    --secondary-color: #536390;
+    --font-color: #424242;
+    --bg-color: #fff;
+    --heading-color: #292922;
+    --logo-url: url('../assets/KM_logo-removebg.png');
+}
+
+.dark {
+    --primary-color: #9a97f3;
+    --secondary-color: #818cab;
+    --font-color: #e1e1ff;
+    --bg-color: #161625;
+    --heading-color: #818cab;
+    --logo-url: url('../assets/KM_logo-removebg-light.png');
+}

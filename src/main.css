@@ -1,0 +1,14 @@
+@import './css/variables.css';
+
+
+*{
+    transition: background-color 0.5s, color 0.5s, background-image 0.5s;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: var(--font-color);
+    background-color: var(--bg-color);
+  }
