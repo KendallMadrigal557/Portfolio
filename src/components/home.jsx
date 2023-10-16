@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'; 
+import { faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons'; 
 import '../css/home.css'
 
 const HomeSection = () => {
@@ -25,6 +25,7 @@ const HomeSection = () => {
                 </div>
 
                 <div className='icon-container' >
+                    <FontAwesomeIcon className='icon' icon={faInstagram} onClick={() =>  goLocation('https://www.instagram.com/madrigal_557/')} />
                     <FontAwesomeIcon className='icon' icon={faLinkedin} onClick={() => goLocation('https://www.linkedin.com/in/ken-madrigal/')} />
                     <FontAwesomeIcon className='icon' icon={faGithub} onClick={() => goLocation(`https://github.com/KendallMadrigal557`)} />
                 </div>
