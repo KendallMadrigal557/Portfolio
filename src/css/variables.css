@@ -7,6 +7,7 @@
     --primary-color: rgba(33, 49, 63, .95);
     --secondary-color: #536390;
     --font-color: #424242;
+    --font-color-secondary: #8a8a8a; 
     --bg-color: #fff;
     --heading-color: #292922;
     --logo-url: url('img/KM_logo-removebg.png');
@@ -17,6 +18,7 @@
     --primary-color: #9a97f3;
     --secondary-color: #818cab;
     --font-color: #e1e1ff;
+    --font-color-secondary:#b0b0ff;
     --bg-color: #161625;
     --heading-color: #818cab;
     --logo-url: url('img/KM_logo-removebg-light.png');

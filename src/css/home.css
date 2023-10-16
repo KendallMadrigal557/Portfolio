@@ -1,0 +1,110 @@
+@import '../css/variables.css';
+
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.pic-container {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+.pic-container img{
+    border: 2px solid var(--font-color);
+    padding: 10px;
+    border-radius:60%; 
+    object-fit: cover;
+}
+
+.info-text {
+    align-self: center;
+    text-align: center;
+}
+
+.info-text p {
+    font-weight: 600;
+}
+
+.p-hello {
+    text-align: center;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    font-family: 'Baloo 2';
+    color: var(--font-color);
+}
+
+.title-name {
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Baloo 2';
+    color: var(--font-color);
+}
+
+.p-developer {
+    text-align: center;
+    font-family: 'Catamaran';
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--font-color-secondary);
+    margin-bottom: 5px;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+
+}
+
+.icon {
+    cursor: pointer;
+    width: 4rem;
+    height: 4rem;
+    color: var(--font-color);
+}
+
+.btn-view {
+    cursor: pointer;
+    padding: 17px 40px;
+    border-radius: 50px;
+    border: 2px solid var(--font-color);
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    font-family: 'Catamaran';
+    font-weight: 600;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all .5s ease;
+}
+
+button:hover {
+    letter-spacing: 3px;
+    background-color: var(--primary-color);
+    color: hsl(0, 0%, 100%);
+    box-shadow: var(--primary-color) 0px 7px 29px 0px;
+}
+
+button:active {
+    letter-spacing: 3px;
+    background-color:var(--primary-color);
+    color: hsl(0, 0%, 100%);
+    box-shadow: var(--primary-color) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+}

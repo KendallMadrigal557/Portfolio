@@ -1,7 +1,7 @@
-// App.jsx
 import React, { useContext, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import './main.css';
+import HomeSection from './components/home';
 import { ThemeContext } from './ThemeContext';
 
 const App = () => {
@@ -19,6 +19,7 @@ const App = () => {
     return (
         <div>
             <Navbar />
+            <HomeSection />
         </div>
     );
 };

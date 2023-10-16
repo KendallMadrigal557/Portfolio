@@ -31,7 +31,7 @@ const Navbar = () => {
         <nav className='navbar'>
             <div className='logo'></div>
             <ul className='navbarList'>
-                <li className='navbarItem'>Home</li>
+                <li className='navbarItem' href='#profile'>Home</li>
                 <li className='navbarItem'>About</li>
                 <li className='navbarItem'>Projects</li>
                 <li className='navbarItem'>Contact</li>
