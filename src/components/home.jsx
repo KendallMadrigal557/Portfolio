@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'; // Asegúrate de importar los íconos específicos que necesitas
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'; 
 import '../css/home.css'
 
 const HomeSection = () => {
