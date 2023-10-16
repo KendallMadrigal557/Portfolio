@@ -5,7 +5,7 @@
 
 :root {
     --primary-color: rgba(33, 49, 63, .95);
-    --secondary-color: #536390;
+    --secondary-color: #a4abc0;
     --font-color: #424242;
     --font-color-secondary: #8a8a8a; 
     --bg-color: #fff;
@@ -15,8 +15,8 @@
 }
 
 .dark {
-    --primary-color: #9a97f3;
-    --secondary-color: #818cab;
+    --primary-color: #9a97f3;   
+    --secondary-color: #6979a7;
     --font-color: #e1e1ff;
     --font-color-secondary:#b0b0ff;
     --bg-color: #161625;
