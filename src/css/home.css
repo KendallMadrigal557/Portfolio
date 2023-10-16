@@ -22,10 +22,10 @@ section {
     margin: auto 0;
 }
 
-.pic-container img{
+.pic-container img {
     border: 2px solid var(--font-color);
     padding: 10px;
-    border-radius:60%; 
+    border-radius: 60%;
     object-fit: cover;
 }
 
@@ -102,9 +102,42 @@ button:hover {
 
 button:active {
     letter-spacing: 3px;
-    background-color:var(--primary-color);
+    background-color: var(--primary-color);
     color: hsl(0, 0%, 100%);
     box-shadow: var(--primary-color) 0px 0px 0px 0px;
     transform: translateY(10px);
     transition: 100ms;
+}
+
+@media (max-width: 768px) {
+    .pic-container {
+        display: flex;
+        height: 250px;
+        width: 250px;
+        margin: auto 0;
+    }
+
+    .icon {
+        cursor: pointer;
+        width: 3rem;
+        height: 3rem;
+        color: var(--font-color);
+    }
+
+    .title-name {
+        font-size: 2rem;
+    }
+
+    .p-hello {
+        font-size: 1.55rem;
+    }
+
+    .p-developer {
+        font-size: 1rem;
+    }
+
+    .btn-view {
+        font-size: 10px;
+    }
+
 }
