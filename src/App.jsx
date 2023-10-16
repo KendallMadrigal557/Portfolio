@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import './main.css';
+import AboutSection from './components/about';
 import HomeSection from './components/home';
 import { ThemeContext } from './ThemeContext';
 
@@ -20,6 +21,7 @@ const App = () => {
         <div>
             <Navbar />
             <HomeSection />
+            <AboutSection />
         </div>
     );
 };
