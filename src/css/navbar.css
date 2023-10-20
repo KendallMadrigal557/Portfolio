@@ -17,7 +17,10 @@
 .navbar .navbarList{
     align-items: end;
 }
-
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
 .logo{
     background-image: var(--logo-url);
     height: 100px;

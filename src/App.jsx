@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import './main.css';
 import AboutSection from './components/about';
 import HomeSection from './components/home';
+import ProjectsSection from './components/projects';
 import { ThemeContext } from './ThemeContext';
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
             <Navbar />
             <HomeSection />
             <AboutSection />
+            <ProjectsSection />
         </div>
     );
 };

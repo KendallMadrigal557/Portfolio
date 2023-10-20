@@ -33,7 +33,7 @@ const Navbar = () => {
             <ul className='navbarList'>
                 <li className='navbarItem' ><a href='#profile'>Home</a></li>
                 <li className='navbarItem' ><a href="#about">About</a></li>
-                <li className='navbarItem'><a href="">Projects</a></li>
+                <li className='navbarItem'><a href="#projects">Projects</a></li>
                 <li className='navbarItem'><a href="">Contact</a></li>
             </ul>
             <div className='toggle-theme' onClick={handleToggle}></div>
@@ -45,7 +45,7 @@ const Navbar = () => {
                 <div className='overlay-content'>
                     <a href='#profile'>Home</a>
                     <a href="#about">About</a>
-                    <a>Projects</a>
+                    <a href='#projects'>Projects</a>
                     <a>Contact</a>
                 </div>
  
