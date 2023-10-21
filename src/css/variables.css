@@ -10,8 +10,8 @@
     --font-color-secondary: #8a8a8a; 
     --bg-color: #fff;
     --heading-color: #292922;
-    --logo-url: url('img/KM_logo-removebg.png');
-    --toggle-theme: url('img/moon.png')
+    --logo-url: url('/img/KM_logo-removebg.png');
+    --toggle-theme: url('/img/moon.png')
 }
 
 .dark {
@@ -21,6 +21,6 @@
     --font-color-secondary:#b0b0ff;
     --bg-color: #161625;
     --heading-color: #818cab;
-    --logo-url: url('img/KM_logo-removebg-light.png');
-    --toggle-theme: url('img/sun.png')
+    --logo-url: url('/img/KM_logo-removebg-light.png');
+    --toggle-theme: url('/img/sun.png')
 }
