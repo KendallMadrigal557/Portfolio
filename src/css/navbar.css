@@ -13,6 +13,8 @@
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    z-index: 999;
+    margin: 0px;
 }
 .navbar .navbarList{
     align-items: end;
@@ -53,7 +55,7 @@ a, a:hover, a:focus, a:active {
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
-    margin-right: 85px;
+    margin-right: 5%;
 }
 
 #menu {
@@ -95,8 +97,6 @@ a:active, a:focus, a:visited {
 }
 
 
-
-/*Nav Mobile*/
 
 a{
     text-decoration: none;  
@@ -144,7 +144,10 @@ a{
     font-size: 65px;
 }
 
-@media screen and (max-height:450px) {
+@media screen and (max-width:500px) {
+    .navbar{
+        width: 100%;
+    }
     .overlay a{
         font-size: 20px;
     }
@@ -154,8 +157,8 @@ a{
         right: 35px;
     }
     .logo{
-        width: 30px;
-        height: 30px;
+        width: 100px;
+        height: 100px;
     }
     .toggle-theme{
         width: 30px;

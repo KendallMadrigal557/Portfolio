@@ -25,6 +25,14 @@ const Navbar = () => {
         e.preventDefault();
         closeNavbar();
     }
+    const handleNavLinkClick = (e, target) => {
+        e.preventDefault();
+        const element = document.getElementById(target);
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+        }
+        closeNavbar();
+    }
 
 
     return (
@@ -43,10 +51,10 @@ const Navbar = () => {
             <div id='mobile-menu' className='overlay'>
                 <a onClick={handleMenuClose} href="" className='close'>&times;</a>
                 <div className='overlay-content'>
-                    <a href='#profile'>Home</a>
-                    <a href="#about">About</a>
-                    <a href='#projects'>Projects</a>
-                    <a>Contact</a>
+                    <a href='#profile' onClick={(e) => handleNavLinkClick(e, 'profile')}>Home</a>
+                    <a href="#about"  onClick={(e) => handleNavLinkClick(e, 'about')}>About</a>
+                    <a href='#projects'  onClick={(e) => handleNavLinkClick(e, 'projects')}>Projects</a>
+                    <a href='#contact' onClick={(e) => handleNavLinkClick(e, 'contact')}>Contact</a>
                 </div>
  
             </div>

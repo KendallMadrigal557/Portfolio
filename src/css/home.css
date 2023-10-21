@@ -2,11 +2,9 @@
 
 section {
     padding-top: 4vh;
-    height: 96vh;
-    margin: 0 10rem;
+    min-height: 100vh; 
+    margin: 0 20px; 
     box-sizing: border-box;
-    min-height: fit-content;
-    margin: 40px;
 }
 
 #profile {
@@ -78,7 +76,7 @@ section {
     color: var(--font-color);
 }
 
-.btn-view {
+.btn-page {
     cursor: pointer;
     padding: 17px 40px;
     border-radius: 50px;
@@ -111,6 +109,12 @@ button:active {
 }
 
 @media (max-width: 768px) {
+    #profile {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
     .pic-container {
         display: flex;
         height: 250px;
@@ -141,4 +145,12 @@ button:active {
         font-size: 10px;
     }
 
+}
+
+
+@media screen and (max-width: 480px) {
+    section {
+        padding-top: 4vh;
+        margin: 0 0px;
+    }
 }

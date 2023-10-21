@@ -21,7 +21,7 @@ const HomeSection = () => {
                 <p className='p-developer'>Software Developer</p>
 
                 <div className='btn-container'>
-                    <button className='btn-view' onClick={handleDownload}>Download CV</button>
+                    <button className='btn-page' onClick={handleDownload}>Download CV</button>
                 </div>
 
                 <div className='icon-container' >

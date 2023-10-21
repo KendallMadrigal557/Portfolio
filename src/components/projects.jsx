@@ -29,21 +29,6 @@ const ProjectsSection = () =>{
                 <h1>Projects</h1>
             </div>
             <div id='projectSection'>
-            {   
-                infoComponent ? 
-                infoComponent.map((item) => (
-                    <ProjectComponent 
-                        key={item._id} 
-                        imgURL={item.imgURL} 
-                        nameProject={item.name}
-                        urlGit={item.gitURL}
-                        language={item.language}
-                        description={item.description}
-                        status={item.status}
-                    />
-                ))
-                : <div>Loading...</div>
-            }
             {
                 infoComponent ? 
                 infoComponent.map((item) => (
@@ -57,7 +42,7 @@ const ProjectsSection = () =>{
                         status={item.status}
                     />
                 ))
-                : <div>Loading...</div>
+                : <div className='loading'>Loading...</div>
             }
             </div>
         </section>

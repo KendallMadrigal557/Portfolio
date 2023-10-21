@@ -4,6 +4,7 @@ import './main.css';
 import AboutSection from './components/about';
 import HomeSection from './components/home';
 import ProjectsSection from './components/projects';
+import ContactSection from './components/contact';
 import { ThemeContext } from './ThemeContext';
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
             <HomeSection />
             <AboutSection />
             <ProjectsSection />
+            <ContactSection />
         </div>
     );
 };

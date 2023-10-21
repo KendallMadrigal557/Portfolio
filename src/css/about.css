@@ -6,11 +6,11 @@
     display: flex;
     flex-direction: row;
     gap: 5rem;
-    height: 80vh;
+    height: 60vh;
 }
 
 #title-about {
-    text-align: center;
+    text-align: center; 
     font-size: 2rem;
     font-family: 'Baloo 2';
     color: var(--font-color);
@@ -146,6 +146,7 @@
 @media  (max-width: 816px) {
     #about{
         flex-direction: column;
+        align-items: center;
     }
     #about-info,
     #about-skills {
@@ -154,4 +155,17 @@
         border-radius: 25px;
         border: 2px solid var(--font-color);
     }
+
+    
   }
+
+  
+@media screen and (max-width: 480px) {
+    #about-info,
+    #about-skills {
+        width: 100%;
+        height: auto;
+        border-radius: 25px;
+        border: 2px solid var(--font-color);
+    }
+}
