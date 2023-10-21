@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from 'react';
-import Navbar from './components/Navbar';
+import Navbar from './components/navbar';
 import './main.css';
 import AboutSection from './components/about';
 import HomeSection from './components/home';
