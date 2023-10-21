@@ -5,7 +5,7 @@ import '../css/home.css'
 
 const HomeSection = () => {
     const handleDownload = () => {
-        window.open(`/src/assets/Curriculum Vitae.pdf`)
+        window.open(`/Curriculum Vitae.pdf`)
     }
     const goLocation = (link) => {
         window.open(link, '_blank')
