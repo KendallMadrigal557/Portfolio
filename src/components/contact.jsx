@@ -3,20 +3,60 @@ import { valid_token } from '../config';
 import '../css/contact.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { Zoom } from 'react-toastify';
+
 
 const ContactSection = () => {
-    const [message, setMessage] = useState('');
     const [email, setEmail] = useState('');
     const [messageText, setMessageText] = useState('');
+
+    const notify = (type, message) => {
+        console.log(message, type);
+        if (type === '1') {
+            toast.success(`${message}`, {
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: false,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "colored",
+            });
+
+        } else if (type === '2') {
+            toast.warn(`${message}`, {
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "colored",
+            });
+        }
+        else if (type === '3') {
+            toast.error(`${message}`, {
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "colored",
+            });
+        }
+    }
     const handleClick = () => {
         if (email.trim() === '' || messageText.trim() === '') {
-            setMessage('Por favor complete todos los campos.');
+            notify('2', 'Por favor complete todos los campos.');
         } else {
 
             const data = {
                 name: email,
                 message: message,
-                token: valid_token 
+                token: valid_token
             };
 
             fetch('https://portfolio-kendall-madrigal.onrender.com/portfolio/contact', {
@@ -28,18 +68,20 @@ const ContactSection = () => {
             })
                 .then(response => {
                     if (!response.ok) {
+                        notify('3', 'El sevidor no encontro respuesta')
                         throw new Error('Network response was not ok');
                     }
                     return response.json();
                 })
                 .then(data => {
-                    setMessage('Se envió su información correctamente');
+                    notify('1', 'Se envió su información correctamente')
                 })
                 .catch(error => {
-                    setMessage('No se pudo enviar su información');
+                    notify('3', 'No se pudo enviar su información')
                     console.error('Error:', error);
                 });
         }
+        notify()
     };
 
     return (
@@ -61,12 +103,25 @@ const ContactSection = () => {
                         </div>
                     </div>
                     <div className="contact-form">
-                        
+
                         <label htmlFor="email-contact" className="form-contact">Email</label>
                         <input type="email" id="email-contact" className="btn-form-contact" value={email} onChange={(e) => setEmail(e.target.value)} />
                         <label htmlFor="message-contact" className="form-contact">Message</label>
                         <textarea type="text" id="message-contact" rows="5" cols="30" resize='none' className="btn-form-contact" value={messageText} onChange={(e) => setMessageText(e.target.value)} />
-                        <p>{message}</p>
+                        <ToastContainer
+                            position="fixed"
+                            transition={Zoom}
+                            autoClose={5000}
+                            newestOnTop={false}
+                            hideProgressBar={false}
+                            closeOnClick={false}
+                            rtl={false}
+                            pauseOnFocusLoss
+                            draggable
+                            pauseOnHover
+                            theme="colored"
+                            limit={1}
+                        />
                         <button className='btn-page' onClick={handleClick}>Send message</button>
                         
                     </div>
