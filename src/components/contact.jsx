@@ -55,7 +55,7 @@ const ContactSection = () => {
 
             const data = {
                 name: email,
-                message: message,
+                message: messageText,
                 token: valid_token
             };
 
