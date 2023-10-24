@@ -163,7 +163,7 @@
 @media screen and (max-width: 480px) {
     #about-info,
     #about-skills {
-        width: 100%;
+        width: 90%;
         height: auto;
         border-radius: 25px;
         border: 2px solid var(--font-color);

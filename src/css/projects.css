@@ -6,6 +6,7 @@
     flex-direction: column;
     justify-content: start;
     margin: 10rem;
+    margin-top: 0;
     gap: 5rem;
 }   
 .loading{
@@ -138,6 +139,7 @@
 .project-description {
     font-size: .8em;
     font-weight: 400;
+    
 
 }
 
@@ -190,12 +192,14 @@
     .card {
         width: 320px;
         margin-bottom:2rem;
+        text-align: start;
     }
     #projectSection {
         display: flex;
         flex-wrap: nowrap;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
     #projects-title{
         padding-left: 0px;
@@ -203,10 +207,5 @@
         padding-top: 20px;
         font-size: 2rem;
     }   
-    .loading{
-        padding-left: 0px;
-        text-align: center;
-        padding-top: 20px;
-        font-size: 2rem;
-    }
+    
 }

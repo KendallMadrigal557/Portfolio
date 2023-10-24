@@ -1,17 +1,13 @@
 @import '../css/variables.css';
 
-section {
-    padding-top: 4vh;
-    min-height: 100vh; 
-    margin: 0 20px; 
-    box-sizing: border-box;
-}
+
 
 #profile {
     display: flex;
     justify-content: center;
     gap: 5rem;
     height: 80vh;
+    
 }
 
 .pic-container {
@@ -149,6 +145,14 @@ button:active {
 
 
 @media screen and (max-width: 480px) {
+    #profile{
+        margin-bottom: 70px;
+    }
+
+    .icon-container {
+        margin-top: 0;
+    
+    }
     section {
         padding-top: 4vh;
         margin: 0 0px;

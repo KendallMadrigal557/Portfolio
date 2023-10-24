@@ -7,6 +7,12 @@
     margin: 0;
     padding: 0;
 }
+section {
+    padding-top: 4vh;
+    min-height: 100vh; 
+    margin: 0 20px; 
+    box-sizing: border-box;
+}
 
 body {
     color: var(--font-color);
