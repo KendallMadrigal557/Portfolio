@@ -6,6 +6,7 @@ import HomeSection from './components/home';
 import ProjectsSection from './components/projects';
 import ContactSection from './components/contact';
 import { ThemeContext } from './ThemeContext';
+import 'animate.css'
 
 const App = () => {
     const { isDarkMode } = useContext(ThemeContext);
@@ -20,7 +21,7 @@ const App = () => {
     }, [isDarkMode]);
 
     return (
-        <div>
+        <div className='animate__animated animate__fadeInLeft'>
             <Navbar />
             <HomeSection />
             <AboutSection />
