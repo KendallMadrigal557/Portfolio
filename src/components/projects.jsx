@@ -1,6 +1,7 @@
 import React , { useState, useEffect } from 'react';
 import ProjectComponent from './projectComponent';
 import '../css/projects.css'
+import LoadingAnimation from './loading';
 
 const ProjectsSection = () =>{
     const [infoComponent, setInfoComponent] = useState(null)
@@ -13,7 +14,6 @@ const ProjectsSection = () =>{
                     throw new Error("It can't connect to API");
                 }
                 const data = await response.json();
-                console.log("Data from API:", data); // Agrega este console.log para verificar los datos
                 setInfoComponent(data);
             } catch (error) {
                 console.error('Error fetching data:', error);
@@ -42,7 +42,7 @@ const ProjectsSection = () =>{
                         status={item.status}
                     />
                 ))
-                : <div className='loading'>Loading...</div>
+                :  <LoadingAnimation />
             }
             </div>
         </section>
