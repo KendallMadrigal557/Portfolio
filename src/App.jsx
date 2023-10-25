@@ -21,12 +21,14 @@ const App = () => {
     }, [isDarkMode]);
 
     return (
-        <div className='animate__animated animate__fadeInLeft'>
+        <div>
             <Navbar />
-            <HomeSection />
-            <AboutSection />
-            <ProjectsSection />
-            <ContactSection />
+            <div className='animate__animated animate__fadeInLeft'>   
+                <HomeSection />
+                <AboutSection />
+                <ProjectsSection />
+                <ContactSection />
+            </div>
         </div>
     );
 };

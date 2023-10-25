@@ -37,16 +37,16 @@ const Navbar = () => {
 
     return (
         <nav className='navbar'>
-            <div className='logo'></div>
-            <ul className='navbarList'>
+            <div className='logo animate__animated animate__fadeInLeft'></div>
+            <ul className='navbarList animate__animated animate__fadeInLeft'>
                 <li className='navbarItem' ><a href='#profile'>Home</a></li>
                 <li className='navbarItem' ><a href="#about">About</a></li>
                 <li className='navbarItem'><a href="#projects">Projects</a></li>
                 <li className='navbarItem'><a href="">Contact</a></li>
             </ul>
-            <div className='toggle-theme' onClick={handleToggle}></div>
+            <div className='toggle-theme animate__animated animate__fadeInLeft' onClick={handleToggle}></div>
 
-            <a href="" onClick={handleMenuOpen} id='menu'>Menu</a>
+            <a href="" onClick={handleMenuOpen} id='menu' className='animate__animated animate__fadeInLeft'>Menu</a>
 
             <div id='mobile-menu' className='overlay'>
                 <a onClick={handleMenuClose} href="" className='close'>&times;</a>
